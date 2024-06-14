@@ -3,4 +3,4 @@ node_modules
 .next
 dist
 .vercel
-.env
+.envnode_modules/
