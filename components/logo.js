@@ -21,20 +21,20 @@ const Logo = () => {
   const beeImg = `/images/bee${useColorModeValue('', '-dark')}.jpg`
 
   return (
-    <Link>
-      <a>
-        <LogoBox>
-          <Image src={beeImg} width={20} height={20} alt="logo"></Image>
-          <Text
-            color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-            fontFamily="M PLUS Rounded 1c"
-            fontWeight="bold"
-            ml={3}
-          >
-            Riya Negi{' '}
-          </Text>
-        </LogoBox>
-      </a>
+    <Link href="/">
+      <LogoBox>
+        <Image src={beeImg} width={20} height={20} alt="logo"></Image>
+        <Text
+          color={useColorModeValue('gray.800', 'whiteAlpha.900')}
+          fontFamily="M PLUS Rounded 1c"
+          fontWeight="bold"
+          ml={3}
+        >
+          Riya Negi{' '}
+        </Text>
+      </LogoBox>
     </Link>
   )
 }
+
+export default Logo
