@@ -19,7 +19,7 @@ const Page = () => {
           <Heading as="h2" variant="page-title">
             Riya Negi
           </Heading>
-          <p>Keen engineer making inutitive websites </p>
+          <span>Keen engineer making inutitive websites </span>
         </Box>
       </Box>
     </Container>

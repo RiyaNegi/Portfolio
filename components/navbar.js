@@ -20,14 +20,14 @@ const LinkItem = ({ href, path, children }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
-    <NextLink href={`${href}`}>
-      <Link
-        p={2}
+    <NextLink href={href} passHref>
+      <Box
+        mx={2}
         bg={active ? 'grassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}
       >
         {children}
-      </Link>
+      </Box>
     </NextLink>
   )
 }
@@ -42,7 +42,6 @@ const Navbar = props => {
       bg={useColorModeValue('#ffffff40', '#20202380')}
       style={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
-      {...props}
     >
       <Container
         display="flex"
@@ -52,7 +51,7 @@ const Navbar = props => {
         align="center"
         justify="space-between"
       >
-        <Heading as="h1" size="lg" letterSpacing={'tighter'}>
+        <Heading as="h1" size="lg" letterSpacing={'tighter'} mr={4}>
           <Logo />
         </Heading>
         <Stack
@@ -79,7 +78,24 @@ const Navbar = props => {
                 icon={<HamburgerIcon />}
                 variant="outline"
                 aria-label="Options"
-              ></MenuButton>
+              />
+              <MenuList>
+                <NextLink href="/" passHref>
+                  <MenuItem>About</MenuItem>
+                </NextLink>
+                <NextLink href="/works" passHref>
+                  <MenuItem>Works</MenuItem>
+                </NextLink>
+                <NextLink href="/posts" passHref>
+                  <MenuItem>Posts</MenuItem>
+                </NextLink>
+                <MenuItem
+                  href="https://github.com/RiyaNegi/Portfolio"
+                  isexternal="true"
+                >
+                  View Source
+                </MenuItem>
+              </MenuList>
             </Menu>
           </Box>
         </Box>
