@@ -18,12 +18,12 @@ const LogoBox = styled.span`
 `
 
 const Logo = () => {
-  const beeImg = `/images/bee${useColorModeValue('', '-dark')}.jpg`
+  const beeImg = `/images/bee.png`
 
   return (
     <Link href="/">
       <LogoBox>
-        <Image src={beeImg} width={20} height={20} alt="logo"></Image>
+        <Image src={beeImg} width={25} height={25} alt="logo"></Image>
         <Text
           color={useColorModeValue('gray.800', 'whiteAlpha.900')}
           fontFamily="M PLUS Rounded 1c"
