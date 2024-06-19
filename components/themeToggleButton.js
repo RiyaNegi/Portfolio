@@ -8,7 +8,6 @@ const ThemeToggleButton = () => {
 
   return (
     <AnimatePresence mode="wait" initial={false}>
-      {console.log('checl', useColorModeValue('light', 'dark'))}
       <motion.div
         style={{ display: 'inline-block' }}
         key={useColorModeValue('light', 'dark')}
