@@ -18,7 +18,7 @@ const Posts = () => {
               href={'/posts'}
               thumbnail={random}
             >
-              <Box>hello</Box>
+              hello
             </GridItem>
           </Section>
         </SimpleGrid>
