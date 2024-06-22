@@ -11,7 +11,11 @@ const Works = () => {
       </Heading>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
-          <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={random}>
+          <WorkGridItem
+            id="npm-react-comments-section"
+            title="NPM react-comments-section"
+            thumbnail={random}
+          >
             A Markdown note-taking app with 100+ plugins, cross-platform and
             encrypted data sync support
           </WorkGridItem>
