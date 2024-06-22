@@ -4,7 +4,14 @@ import { GridItemStyle } from '../grid-item'
 
 const variants = {
   hidden: { x: 0, opacity: 0, y: 20 },
-  enter: { x: 0, opacity: 1, y: 0 },
+  enter: {
+    x: 0,
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 1
+    }
+  },
   exit: { x: 0, opacity: 0, y: 20 }
 }
 
