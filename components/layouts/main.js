@@ -1,6 +1,6 @@
 import Head from 'next/Head'
 import Navbar from '../navbar'
-import { Box, Container } from '@chakra-ui/react'
+import { Box, Container, Heading, Image } from '@chakra-ui/react'
 
 const Main = ({ children, router }) => {
   return (
@@ -10,7 +10,11 @@ const Main = ({ children, router }) => {
         <title> Riya Negi's HomePage</title>
       </Head>
       <Navbar path={router.asPath} />
-      <Container maxW="container.md" pt={15}>
+      <Container
+        maxW="container.md"
+        pt={15}
+        css={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+      >
         {children}
       </Container>
     </Box>
