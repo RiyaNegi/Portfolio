@@ -21,52 +21,43 @@ import {
   IoLogoLinkedin,
   IoLogoGithub
 } from 'react-icons/io5'
+import { motion } from 'framer-motion'
 
 const Page = () => {
   return (
     <>
-      <Box
-        position="relative"
-        display="flex"
-        alignItems="center"
-        justifyContent="end"
-        w={{ base: '300px', sm: '500px', md: '850px' }}
-        mt={20}
-      >
-        <Box flexGrow={1} position="absolute" top="160px" left="0">
-          <Heading as="h1" fontSize={70} variant="page-title">
-            Riya Negi
-          </Heading>
-          <span>Keen engineer making intuitive websites</span>
-        </Box>
-        <Box
-          top={0}
-          left={0}
-          w={{ base: '90%', md: '500px' }}
-          h="500px"
-          borderTopLeftRadius="400px"
-          borderTopRightRadius="400px"
-          overflow="hidden"
-        >
-          <Image
-            src="/images/Riya.jpeg"
-            alt="Profile image"
-            objectFit="cover"
-            width="100%"
-            height="500"
-          />
-        </Box>
-        {/* <Box flexGrow={1} position="absolute" top="20px" right="-70px">
-          <Image
-            src="/images/sticker.png"
-            alt="sticker image"
-            objectFit="cover"
-            width="200"
-            height="200"
-          />
-        </Box> */}
-      </Box>
       <Layout>
+        <Box
+          position="relative"
+          display="flex"
+          alignItems="center"
+          justifyContent="end"
+          w={{ base: '300px', sm: '500px', md: '850px' }}
+          mt={20}
+        >
+          <Box flexGrow={1} position="absolute" top="160px" left="0">
+            <Heading as="h1" fontSize={70} variant="page-title">
+              Riya Negi
+            </Heading>
+            <span>Keen engineer making intuitive websites</span>
+          </Box>
+          <Box
+            top={0}
+            left={0}
+            w={{ base: '90%', md: '500px' }}
+            h="500px"
+            borderRadius="400px"
+            overflow="hidden"
+          >
+            <Image
+              src="/images/Riya.jpeg"
+              alt="Profile image"
+              objectFit="cover"
+              width="100%"
+              height="500"
+            />
+          </Box>
+        </Box>
         <Container maxW="620px">
           <Box
             borderRadius="lg"
@@ -76,7 +67,7 @@ const Page = () => {
             mt={12}
             textAlign="center"
           >
-            Hello, I'm a frontend developer based in India
+            Hello, I'm a frontend engineer based in India
           </Box>
           <Section delay={0.1}>
             {' '}
