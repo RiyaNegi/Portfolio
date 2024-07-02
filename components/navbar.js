@@ -12,7 +12,8 @@ import {
   MenuList,
   MenuButton,
   IconButton,
-  useColorModeValue
+  useColorModeValue,
+  Text
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './themeToggleButton'
@@ -22,13 +23,14 @@ const LinkItem = ({ href, path, children }) => {
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
     <NextLink href={href} passHref>
-      <Box
-        mx={2}
-        bg={active ? 'grassTeal' : undefined}
-        color={active ? '#202023' : inactiveColor}
+      <Text
+        as="span"
+        textDecoration={active ? 'underline' : 'none'}
+        _hover={{ textDecoration: 'underline' }}
+        _active={{ textDecoration: 'underline' }}
       >
         {children}
-      </Box>
+      </Text>
     </NextLink>
   )
 }
