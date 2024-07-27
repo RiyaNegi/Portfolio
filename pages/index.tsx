@@ -7,7 +7,8 @@ import {
   Button,
   Link,
   ListItem,
-  List
+  List,
+  Text
 } from '@chakra-ui/react'
 import NextLink from 'next/link'
 import Section from '../components/section'
@@ -21,7 +22,6 @@ import {
   IoLogoLinkedin,
   IoLogoGithub
 } from 'react-icons/io5'
-import { motion } from 'framer-motion'
 
 const Page = () => {
   return (
@@ -32,30 +32,70 @@ const Page = () => {
           display="flex"
           alignItems="center"
           justifyContent="end"
-          w={{ base: '300px', sm: '500px', md: '850px' }}
-          mt={20}
+          sx={{
+            '@media screen and (max-width: 999px)': {
+              flexDirection: 'column',
+              marginTop: '120px',
+              marginBottom: '120px'
+            },
+            '@media screen and (min-width: 1000px)': {
+              flexDirection: 'row',
+              width: '1020px',
+              marginTop: '150px',
+              marginBottom: '200px'
+            }
+          }}
         >
-          <Box flexGrow={1} position="absolute" top="160px" left="0">
-            <Heading as="h1" fontSize={70} variant="page-title">
-              Riya Negi
-            </Heading>
-            <span>Keen engineer making intuitive websites</span>
-          </Box>
           <Box
-            top={0}
-            left={0}
-            w={{ base: '90%', md: '500px' }}
-            h="500px"
             borderRadius="400px"
             overflow="hidden"
+            sx={{
+              '@media screen and (max-width: 999px)': {
+                width: '400px',
+                height: '400px'
+              },
+              '@media screen and (max-width: 530px)': {
+                width: '300px',
+                height: '300px'
+              },
+              '@media screen and (min-width: 1000px)': {
+                width: '500px',
+                height: '500px'
+              }
+            }}
           >
             <Image
               src="/images/Riya.jpeg"
               alt="Profile image"
               objectFit="cover"
-              width="100%"
-              height="500"
+              sx={{
+                '@media screen and (min-width: 1000px)': {
+                  width: '100%',
+                  height: '100%'
+                }
+              }}
             />
+          </Box>
+          <Box
+            flexGrow={1}
+            textAlign={['center', 'left']}
+            sx={{
+              '@media screen and (max-width: 999px)': {
+                position: 'relative',
+                top: '30px',
+                left: '0px'
+              },
+              '@media screen and (min-width: 1000px)': {
+                position: 'absolute',
+                top: '160px',
+                left: '60px'
+              }
+            }}
+          >
+            <Heading as="h1" fontSize={[70, 80]} variant="page-title">
+              Riya Negi
+            </Heading>
+            <Text fontSize={20}>Keen engineer making intuitive websites</Text>
           </Box>
         </Box>
         <Container maxW="620px">
@@ -72,21 +112,29 @@ const Page = () => {
           <Section delay={0.1}>
             {' '}
             <Heading as="h3" variant="section-title">
-              Work
+              About
             </Heading>
             <Paragraph>
               <NextLink href="/works/projects" color="teal.500">
-                I am a dedicated frontend developer with three years of
-                experience in crafting intuitive and accessible websites.
-                Passionate about creating user-friendly digital experiences, I
-                combine creativity with technical expertise to ensure that every
-                project not only meets but exceeds user expectations.
+                I have an avid interest in web technologies and thus believe
+                that even if art is subjective, good user interfaces shouldn’t
+                be. For users, it must be as simple as a click to reach from
+                point A to point B, but behind the backdrop, there lies complex
+                but fascinating mechanisms of asynchronous code all working
+                together to produce the intended result. And I strive to play a
+                role in these impactful endeavours.
                 <br />
-                Outside of coding, I practice mindful living and find balance
-                through yoga and meditation. With a commitment to enhancing the
-                online world and a holistic approach to life, I am always
-                seeking innovative ways to improve both professionally and
-                personally.
+                While taking a course for DBMS during my undergrad days, we had
+                to build an application supporting our understanding of the
+                course. I started with building a basic webpage and instantly
+                realised how inadequate my knowledge was of how web technology
+                works or interacts with the user. I learnt that modern webpages
+                focus on how to make every user interaction count and how to
+                reach the goal with the least number of clicks without
+                compromising the intuitiveness of the webpage/platform. I was
+                instantly captivated by the endless possibilities of what the
+                culmination of code and design can do and how powerful it can
+                be. Thus began my pursuits of understanding web technologies.
               </NextLink>
             </Paragraph>
             <Box mt={4}>
@@ -105,11 +153,30 @@ const Page = () => {
             <Box display="flex">
               <BioSection>
                 {' '}
-                <BioYear>1999</BioYear>I was born!
+                <Box>
+                  <BioYear>1999</BioYear>I was born!
+                </Box>
+                <Box>
+                  <BioYear>2020</BioYear>Personal venture at WiredClan
+                </Box>
+                <Box>
+                  <BioYear>2021</BioYear>Completed graduation in BE Computer
+                  Engineering
+                </Box>
+                <Box>
+                  <BioYear>2021</BioYear>Lead frontend dev, building MVP at
+                  Cosmofeed
+                </Box>
+                <Box>
+                  <BioYear>2021 to present</BioYear>Frontend dev at Geosnapshot
+                </Box>
               </BioSection>
             </Box>
           </Section>
           <List>
+            <Heading as="h3" variant="section-title">
+              On the web
+            </Heading>
             <ListItem>
               <Link href="https://github.com/RiyaNegi" target="_blank">
                 <Button

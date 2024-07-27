@@ -11,10 +11,10 @@ const Posts = () => {
   return (
     <Layout title="Posts">
       <Container mt={50}>
-        <Heading as="h4" fontSize={20} mb={4}>
+        <Heading as="h3" fontSize={30} mt={3} mb={10}>
           Posts
         </Heading>
-        <SimpleGrid columns={[1, 1, 2]} gap={8}>
+        <SimpleGrid columns={[1, 1, 1]} gap={20}>
           <Section>
             <GridItem
               title="Setting up Webpack 5 with React and Babel from scratch"

@@ -2,6 +2,14 @@ import NextLink from 'next/link'
 import Image from 'next/image'
 import { Box, Text, LinkBox, LinkOverlay } from '@chakra-ui/react'
 import { Global } from '@emotion/react'
+import styled from '@emotion/styled'
+
+const HoverImage = styled(Image)`
+  transition: transform 0.3s;
+  &:hover {
+    transform: scale(1.02);
+  }
+`
 
 export const GridItem = ({ children, href, title, thumbnail }) => {
   return (
@@ -15,7 +23,14 @@ export const GridItem = ({ children, href, title, thumbnail }) => {
           loading="lazy"
         />
         <LinkOverlay href={href} target="_blank">
-          <Text mt={2}>{title}</Text>
+          <Text
+            mt={2}
+            fontSize={20}
+            fontWeight={600}
+            textDecoration={'underline'}
+          >
+            {title}
+          </Text>
         </LinkOverlay>
         <Text fontSize={14}>{children}</Text>
       </LinkBox>
@@ -37,14 +52,19 @@ export const WorkGridItem = ({
       scroll={false}
       cursor="pointer"
     >
-      <Image
+      <HoverImage
         src={thumbnail}
         alt={title}
         className="grid-item-thumbnail"
         placeholder="blur"
       />
       <LinkOverlay as="div" href={`/${category}/${id}`}>
-        <Text mt={2} fontSize={20}>
+        <Text
+          mt={2}
+          fontSize={20}
+          fontWeight={600}
+          textDecoration={'underline'}
+        >
           {title}
         </Text>
       </LinkOverlay>

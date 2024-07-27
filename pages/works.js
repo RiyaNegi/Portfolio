@@ -11,15 +11,16 @@ import teerex from '../public/images/work/teerex.png'
 const Works = () => {
   return (
     <Container mt={50}>
-      <Heading as="h3" fontSize={20} mb={4}>
-        Works
+      <Heading as="h3" fontSize={30} mt={3} mb={10}>
+        What I have been working on
       </Heading>
-      <SimpleGrid columns={[1, 1, 2]} gap={10}>
+      <SimpleGrid columns={[1, 1, 1]} gap={20}>
         <Section>
           <WorkGridItem
             id="npm-react-comments-section"
             title="NPM react-comments-section"
             thumbnail={comments}
+            delay={0.2}
           >
             npm package for integrating a fully functional comments section in
             react web apps along with custom input fields.
