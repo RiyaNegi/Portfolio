@@ -116,25 +116,25 @@ const Page = () => {
             </Heading>
             <Paragraph>
               <NextLink href="/works/projects" color="teal.500">
-                I have an avid interest in web technologies and thus believe
-                that even if art is subjective, good user interfaces shouldn’t
-                be. For users, it must be as simple as a click to reach from
-                point A to point B, but behind the backdrop, there lies complex
-                but fascinating mechanisms of asynchronous code all working
-                together to produce the intended result. And I strive to play a
-                role in these impactful endeavours.
+                I have an avid interest in web technologies and believe that
+                even if art is subjective, good user interfaces shouldn’t be.
+                For users, it must be as simple as a click to reach from point A
+                to point B, but behind the backdrop, there lies complex but
+                fascinating mechanisms of asynchronous code all working together
+                to produce the intended result. And I strive to play a role in
+                these impactful endeavours.
                 <br />
                 While taking a course for DBMS during my undergrad days, we had
                 to build an application supporting our understanding of the
                 course. I started with building a basic webpage and instantly
-                realised how inadequate my knowledge was of how web technology
-                works or interacts with the user. I learnt that modern webpages
-                focus on how to make every user interaction count and how to
-                reach the goal with the least number of clicks without
-                compromising the intuitiveness of the webpage/platform. I was
-                instantly captivated by the endless possibilities of what the
-                culmination of code and design can do and how powerful it can
-                be. Thus began my pursuits of understanding web technologies.
+                realised the vast potential of web technology yet to be
+                explored. I learnt that modern webpages focus on how to make
+                every user interaction count and how to reach the goal with the
+                least number of clicks without compromising the intuitiveness of
+                the webpage/platform. I was instantly captivated by the endless
+                possibilities of what the culmination of code and design can do
+                and how powerful it can be. Thus began my ongoing pursuits of
+                understanding web technologies!
               </NextLink>
             </Paragraph>
             <Box mt={4}>

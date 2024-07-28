@@ -1,14 +1,13 @@
 import {
   Container,
-  Badge,
-  Link,
   List,
   ListItem,
   Heading,
-  Image
+  Image,
+  Link
 } from '@chakra-ui/react'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
+import { Title, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 import demoPic1 from '../../public/images/work/rcs2.png'
@@ -23,19 +22,19 @@ const Work = () => (
         How I got the Idea
       </Heading>
       <P>
-        I was working on WiredClan, building a comment section and realised
-        there are multiple ways to build a comment section. It could be
-        multi-threaded or single-threaded or one-level-threaded. Plus I also had
-        to figure out how to maintain that data and connect with the backend.
-        Did some research on how I wanted it for my website and what's most
-        optimum in my particular use-case.
+        While I was working on <Link href="/works/wiredclan">WiredClan</Link>,
+        building a comments section, I realised there are multiple ways to build
+        a comment section. It could either be multi-threaded or single-threaded
+        or one-level-threaded. Plus I also had to figure out how to maintain
+        that data and connect with the backend. I Did some research on how I
+        wanted it for my website and what's most optimum in my particular
+        use-case.
         <br />
-        <br /> I realised however, for absolute beginners, working on starter
-        projects like a personal blog, or a gallery website, working to learn
-        basics of webpage development, the whole process of building a comment
-        section could be a little overwhelming. I couldn't find a simple npm
-        package for it, so I thought I would make one for others to use in their
-        projects.
+        <br /> I realised however, for absolute beginners learning basics of
+        webpage development, working on starter projects like a personal blog,
+        or a gallery website, the whole process of building a comment section
+        could be a little overwhelming. I couldn't find a simple npm package for
+        it, so I thought I would make one for others to use in their projects.
       </P>
       <List ml={4} my={4}>
         <ListItem>
@@ -65,7 +64,7 @@ const Work = () => (
         idea of making things customizable meant that I had to keep everything
         fluid without making a mess out of it. The users are supposed to give
         inputs and it's supposed to work throughout consistently. So if a user
-        is logged in or not would also make a differnece on how the UI would
+        is logged in or not would also make a difference on how the UI would
         look, what features it would have access to and what not to.
         <br />
         <br /> At first I thought of introducing reducers, however that amount
@@ -93,7 +92,7 @@ const Work = () => (
         confusion.
         <br />
         <br />
-        Don't try to overengineer stuff, and adapt yourself according to the
+        Don't try to over-engineer stuff, and adapt yourself according to the
         application's requirements.
       </P>
     </Container>

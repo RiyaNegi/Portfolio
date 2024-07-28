@@ -1,14 +1,6 @@
-import {
-  Container,
-  Badge,
-  Link,
-  List,
-  ListItem,
-  Heading,
-  Image
-} from '@chakra-ui/react'
+import { Container, List, ListItem, Heading, Image } from '@chakra-ui/react'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
+import { Title, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 import demoPic1 from '../../public/images/work/social2.png'
@@ -25,15 +17,15 @@ const Work = () => (
       <P>
         In the 4th year of college, Me and my teammate were looking for ideas
         for the final year project. I wanted something that covers the spectrum
-        of both our skills. Since I was handling frontend engineering I wanted
+        of both our skills. Since I was handling frontend engineering, I wanted
         something elaborate with graphs and visualization so after brainstorming
         we settled on building a social-monitoring dashboard for
         products/companies.
         <br />
         <br />
-        It would scrape, clean and parse all data and then display it in the
-        form of various charts or graphs on a single page dashboard with user
-        authentication
+        It would scrape, clean and parse all data releveant to the keywords and
+        then display it in the form of various charts or graphs on a single page
+        dashboard with user authentication
       </P>
       <List ml={4} my={4}>
         <ListItem>

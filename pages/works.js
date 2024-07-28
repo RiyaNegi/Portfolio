@@ -52,7 +52,7 @@ const Works = () => {
           >
             Kanban board along with a simple todo list view for better task
             management. The Board view and List view are interconnected and any
-            changes made on either of the views will be persist.
+            changes made on either of the views will persist.
           </GridItem>
         </Section>
         <Section>

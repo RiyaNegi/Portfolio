@@ -1,14 +1,6 @@
-import {
-  Container,
-  Badge,
-  Link,
-  List,
-  ListItem,
-  Heading,
-  Image
-} from '@chakra-ui/react'
+import { Container, List, ListItem, Heading, Image } from '@chakra-ui/react'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
-import { Title, WorkImage, Meta } from '../../components/work'
+import { Title, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 import demoPic1 from '../../public/images/work/wc2.png'
@@ -31,7 +23,7 @@ const Work = () => (
         <br />
         Wiredclan was building an online tech community in colleges and this
         fire spread fast. I was able to host 5 hackathons across India on my
-        platform with the help of my team. This was me first ever personal
+        platform with the help of my team. This was my first ever personal
         venture and I was able to learn so much through the experience.
       </P>
       <List ml={4} my={4}>
@@ -80,14 +72,13 @@ const Work = () => (
       </Heading>
       <P>
         Some use cases can demand a structural change of the entire project, so
-        we should always architecture by keeping components as loosely coupled
-        as possible, so that they can be replaced, re-ordered or removed if need
-        be.
+        we should always build components as loosely coupled as possible, so
+        that they can be replaced, re-ordered or removed if need be.
         <br />
         <br />
         After a while when the venture became more than a personal project, we
         realized that we had a lot of things to handle, so we decided to make
-        the project open for public contribution. We had to review the PR but
+        the project open for public contribution. We had to review the PRs but
         that showed me the power of open-source community and encouraged me to
         contribute back into the community as well!
       </P>
