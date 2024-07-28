@@ -26,7 +26,7 @@ import {
 const Page = () => {
   return (
     <>
-      <Layout>
+      <Layout title="main">
         <Box
           position="relative"
           display="flex"
