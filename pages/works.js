@@ -1,6 +1,6 @@
 import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
 import Section from '../components/section'
-import { WorkGridItem } from '../components/grid-item'
+import { WorkGridItem, GridItem } from '../components/grid-item'
 import kanban from '../public/images/work/kanban.png'
 import comments from '../public/images/work/comments.png'
 import student from '../public/images/work/student.png'
@@ -28,7 +28,7 @@ const Works = () => {
         </Section>
         <Section>
           <WorkGridItem
-            id="social"
+            id="social-monitoring"
             title="Social-Monitoring"
             thumbnail={social}
           >
@@ -44,24 +44,39 @@ const Works = () => {
           </WorkGridItem>
         </Section>
         <Section>
-          <WorkGridItem id="kanban" title="Kanban Board" thumbnail={kanban}>
+          <GridItem
+            id="kanban"
+            title="Kanban Board"
+            thumbnail={kanban}
+            href={'https://github.com/RiyaNegi/Kanban-Board'}
+          >
             Kanban board along with a simple todo list view for better task
             management. The Board view and List view are interconnected and any
             changes made on either of the views will be persist.
-          </WorkGridItem>
+          </GridItem>
         </Section>
         <Section>
-          <WorkGridItem id="teerex" title="Teerex-store" thumbnail={teerex}>
+          <GridItem
+            id="teerex"
+            title="Teerex-store"
+            thumbnail={teerex}
+            href={'https://github.com/RiyaNegi/Teerex-store'}
+          >
             A mock e-commerce clothing website with the abilities to filter and
             search through the prodcuts
-          </WorkGridItem>
+          </GridItem>
         </Section>
         <Section>
-          <WorkGridItem id="student" title="Student-Data" thumbnail={student}>
+          <GridItem
+            id="student"
+            title="Student-Data"
+            thumbnail={student}
+            href={'https://github.com/RiyaNegi/Student-Data'}
+          >
             A single page react application where one side of the page has a
             student details form to submit and the other side has a table that
             displays all the registered students along with their details.
-          </WorkGridItem>
+          </GridItem>
         </Section>
       </SimpleGrid>
     </Container>

@@ -32,7 +32,7 @@ export const GridItem = ({ children, href, title, thumbnail }) => {
             {title}
           </Text>
         </LinkOverlay>
-        <Text fontSize={14}>{children}</Text>
+        <Text fontSize={16}>{children}</Text>
       </LinkBox>
     </Box>
   )
@@ -68,7 +68,7 @@ export const WorkGridItem = ({
           {title}
         </Text>
       </LinkOverlay>
-      <Text fontSize={14}>{children}</Text>
+      <Text fontSize={16}>{children}</Text>
     </LinkBox>
   </Box>
 )
