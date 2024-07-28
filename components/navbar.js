@@ -3,10 +3,8 @@ import NextLink from 'next/link'
 import {
   Container,
   Box,
-  Link,
   Stack,
   Heading,
-  Flex,
   Menu,
   MenuItem,
   MenuList,
@@ -20,7 +18,6 @@ import ThemeToggleButton from './themeToggleButton'
 
 const LinkItem = ({ href, path, children }) => {
   const active = path === href
-  const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
     <NextLink href={href} passHref>
       <Text
