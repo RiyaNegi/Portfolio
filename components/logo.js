@@ -27,7 +27,7 @@ const Logo = () => {
         <Image src={beeImg} width={25} height={25} alt="logo"></Image>
         <Text
           color={useColorModeValue('gray.800', 'whiteAlpha.900')}
-          fontFamily="'Playfair Display', serif"
+          fontFamily="'Lora', serif"
           fontWeight="bold"
           ml={3}
         >

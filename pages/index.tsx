@@ -78,7 +78,7 @@ const Page = () => {
           </Box>
           <Box
             flexGrow={1}
-            textAlign={['center', 'left']}
+            textAlign={['center', 'center', 'left']}
             sx={{
               '@media screen and (max-width: 999px)': {
                 position: 'relative',
@@ -92,7 +92,7 @@ const Page = () => {
               }
             }}
           >
-            <Heading as="h1" fontSize={[70, 80]} variant="page-title">
+            <Heading as="h1" fontSize={[60, 70, 80]} variant="page-title">
               Riya Negi
             </Heading>
             <Text fontSize={20}>Keen engineer making intuitive websites</Text>
