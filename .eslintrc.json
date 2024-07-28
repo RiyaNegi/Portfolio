@@ -1,9 +1,9 @@
 {
   "root": true,
   "extends": "next",
-  "ignoreDuringBuilds": true,
   "rules": {
     "react/no-unescaped-entities": 0,
+    "ignoreDuringBuilds": true,
     "no-unused-vars": [
       "error",
       {

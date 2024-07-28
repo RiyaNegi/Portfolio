@@ -4,7 +4,7 @@ import { WorkGridItem, GridItem } from '../components/grid-item'
 import kanban from '../public/images/work/kanban.png'
 import comments from '../public/images/work/comments.png'
 import student from '../public/images/work/student.png'
-import wiredClan from '../public/images/work/wiredClan.png'
+import wiredClan from '../public/images/work/wiredclan.png'
 import social from '../public/images/work/social.png'
 import teerex from '../public/images/work/teerex.png'
 
