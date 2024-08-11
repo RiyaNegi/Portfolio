@@ -1,4 +1,11 @@
-import { Container, List, ListItem, Heading, Image } from '@chakra-ui/react'
+import {
+  Container,
+  List,
+  ListItem,
+  Heading,
+  Image,
+  Link
+} from '@chakra-ui/react'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import { Title, Meta } from '../../components/work'
 import P from '../../components/paragraph'
@@ -35,6 +42,16 @@ const Work = () => (
         <ListItem>
           <Meta>Stack</Meta>
           <span>Python, Flask, React, Reducers, Websockets, JWT</span>
+        </ListItem>
+        <ListItem>
+          <Meta>Source</Meta>
+          <Link
+            href="https://github.com/RiyaNegi/Social-Monitoring"
+            textDecoration={'underline'}
+            target="_blank"
+          >
+            Repo link
+          </Link>
         </ListItem>
       </List>
       <Image

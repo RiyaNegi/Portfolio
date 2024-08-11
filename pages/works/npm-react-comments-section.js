@@ -45,6 +45,16 @@ const Work = () => (
           <Meta>Stack</Meta>
           <span>React, react context</span>
         </ListItem>
+        <ListItem>
+          <Meta>Source</Meta>
+          <Link
+            href="https://github.com/RiyaNegi/react-comments-section"
+            textDecoration={'underline'}
+            target="_blank"
+          >
+            Repo link
+          </Link>
+        </ListItem>
       </List>
       <Image
         borderRadius="md"

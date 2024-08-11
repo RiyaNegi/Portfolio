@@ -90,12 +90,12 @@ const Navbar = props => {
                 <NextLink href="/posts" passHref>
                   <MenuItem>Posts</MenuItem>
                 </NextLink>
-                <MenuItem
+                <NextLink
                   href="https://github.com/RiyaNegi/Portfolio"
                   isexternal="true"
                 >
-                  View Source
-                </MenuItem>
+                  <MenuItem>View Source</MenuItem>
+                </NextLink>
               </MenuList>
             </Menu>
           </Box>

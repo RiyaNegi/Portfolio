@@ -1,4 +1,11 @@
-import { Container, List, ListItem, Heading, Image } from '@chakra-ui/react'
+import {
+  Container,
+  List,
+  ListItem,
+  Heading,
+  Image,
+  Link
+} from '@chakra-ui/react'
 import { ArrowForwardIcon } from '@chakra-ui/icons'
 import { Title, Meta } from '../../components/work'
 import P from '../../components/paragraph'
@@ -34,6 +41,16 @@ const Work = () => (
         <ListItem>
           <Meta>Stack</Meta>
           <span>Postgress, Express, React, Reducers</span>
+        </ListItem>
+        <ListItem>
+          <Meta>Source</Meta>
+          <Link
+            href="https://github.com/RiyaNegi/WiredClan"
+            textDecoration={'underline'}
+            target="_blank"
+          >
+            Repo link
+          </Link>
         </ListItem>
       </List>
       <Image
