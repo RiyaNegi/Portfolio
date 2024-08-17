@@ -23,18 +23,18 @@ const Work = () => (
       </Heading>
       <P>
         While I was working on <Link href="/works/wiredclan">WiredClan</Link>,
-        building a comments section, I realised there are multiple ways to build
-        a comment section. It could either be multi-threaded or single-threaded
-        or one-level-threaded. Plus I also had to figure out how to maintain
-        that data and connect with the backend. I Did some research on how I
-        wanted it for my website and what's most optimum in my particular
-        use-case.
+        we had a scope for building a comments section. While working on it I
+        realized there are multiple ways to build a comment section. It could
+        either be multi-threaded or single-threaded or one-level-threaded.
+        Additionally, I also had to figure out how to maintain that data and
+        connect with the backend. I Did some research on how I wanted it for my
+        website and what's most optimum in my particular use-case.
         <br />
-        <br /> I realised however, for absolute beginners learning basics of
-        webpage development, working on starter projects like a personal blog,
-        or a gallery website, the whole process of building a comment section
-        could be a little overwhelming. I couldn't find a simple npm package for
-        it, so I thought I would make one for others to use in their projects.
+        <br /> While working on this, I noticed that beginners learning web
+        development, especially those creating personal blogs or gallery
+        websites, might find building a comment section overwhelming. Since I
+        couldn’t find an easy npm package for it, I decided to create one to
+        help others with their projects.
       </P>
       <List ml={4} my={4}>
         <ListItem>
@@ -70,20 +70,20 @@ const Work = () => (
         Problems and thought process
       </Heading>
       <P>
-        This was my first ever npm-package so a lot of it was new to me. The
-        idea of making things customizable meant that I had to keep everything
-        fluid without making a mess out of it. The users are supposed to give
-        inputs and it's supposed to work throughout consistently. So if a user
-        is logged in or not would also make a difference on how the UI would
-        look, what features it would have access to and what not to.
+        This was my first ever npm package, so a lot of things were new for me.
+        The idea of making things customizable meant that I had to keep
+        everything fluid without making a mess out of it. The users are supposed
+        to give inputs, and it's supposed to work throughout consistently. So if
+        a user is logged in or not would also make a difference on how the UI
+        would look, what features it would have access to, and what not to.
         <br />
-        <br /> At first I thought of introducing reducers, however that amount
+        <br /> At first, I thought of introducing reducers; however, that amount
         of boilerplate code and complexity was not required for a small npm
-        package, so I turned to react context and found that it fit perfectly
+        package. So I turned to react context and found that it fit perfectly
         according to my requirements and helped in maintaining the global state
-        of the project. Avoided prop-drilling hell by using the GlobalProvider
-        store and having access to user given props across the app also reduced
-        re-renders.
+        of the project.  I avoided prop-drilling hell by using the
+        GlobalProvider store and having access to user-given props across the
+        app also reduced re-renders.
       </P>
       <Image
         borderRadius="md"
@@ -98,11 +98,11 @@ const Work = () => (
       </Heading>
       <P>
         Readable code is very important in places where there are going to be
-        multiple props and states because it could easily create a clutter and
+        multiple props and states because it could easily create clutter and
         confusion.
         <br />
         <br />
-        Don't try to over-engineer stuff, and adapt yourself according to the
+        Don't try to overengineer stuff, and adapt yourself according to the
         application's requirements.
       </P>
     </Container>

@@ -22,17 +22,20 @@ const Work = () => (
         How I got the Idea
       </Heading>
       <P>
-        In the 4th year of college, Me and my teammate were looking for ideas
-        for the final year project. I wanted something that covers the spectrum
-        of both our skills. Since I was handling frontend engineering, I wanted
-        something elaborate with graphs and visualization so after brainstorming
-        we settled on building a social-monitoring dashboard for
-        products/companies.
+        In the 4th year of college, my teammate and I were looking for ideas.
+        for the final year project. We wanted something that covers the
+        spectrum. of both our skills. Since I was handling frontend engineering,
+        I wanted something elaborate with graphs and visualization. We were
+        brainstorming ideas that would create an impact in real-world
+        applications. We realized that social media has a huge impact in today's
+        world. And thus, decided on a social-monitoring tool that would help
+        products or companies analyze data.
         <br />
         <br />
-        It would scrape, clean and parse all data releveant to the keywords and
+        It would scrape, clean and parse all data relevant to the keywords and
         then display it in the form of various charts or graphs on a single page
-        dashboard with user authentication
+        dashboard with user authentication. This would help companies analyze
+        data and make important decisions based on user sentiments.
       </P>
       <List ml={4} my={4}>
         <ListItem>
@@ -67,14 +70,14 @@ const Work = () => (
       </Heading>
       <P>
         Since this project involved a constant connection with the backend for
-        getting new parsed data from the internet there was a requirement of
-        handling the usecase where the backend needs to inform client that new
-        data is available.
+        getting new parsed data from the internet, there was a requirement of
+        handling the use-case where the backend needs to inform the client that
+        the new data is available.
         <br />
         <br />
-        This was new to me since I always made the connection from client to
-        backend on the basis of user actions. After some research, I learned
-        about websockets and applied it here so that we could make an API call
+        This was new for me since I always made the connection from the client
+        to the backend based on user actions. After some research, I learned
+        about WebSockets and applied it here so that we could make an API call
         whenever new data was available.
       </P>
       <Image
